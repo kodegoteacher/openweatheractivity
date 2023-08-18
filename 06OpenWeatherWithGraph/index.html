@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Forecast</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name"
+        />
+        <button onclick="getWeather()">Get Weather</button>
+      </div>
+      <div
+        id="weather-container"
+        class="hidden"
+      >
+        <h2>Hourly Forecast for Today</h2>
+        <div id="hourly-forecast"></div>
+        <h2>Weekly Forecast with graph</h2>
+        <div id="weekly-chart-container">
+          <canvas id="weekly-chart"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
