@@ -12,7 +12,7 @@ function getWeather() {
             populateHourlyForecast(weatherData);
             populateWeeklyChart(weatherData);
 
-            console.log(weatherData)
+            console.log(weatherData);
         })
         .catch((error) => {
             console.error('Error fetching weather data:', error);
